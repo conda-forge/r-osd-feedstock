@@ -1,6 +1,5 @@
 {% set version = '0.1' %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-osd
@@ -13,8 +12,7 @@ source:
   sha256: d7742980311db53ee556c976a4a9c5f4a71f97eab3d39838cacdb36c4bb8c9df
 
 build:
-  merge_build_host: True  # [win]
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
